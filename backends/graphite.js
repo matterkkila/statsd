@@ -100,10 +100,10 @@ var flush_stats = function graphite_flush(ts, metrics) {
 
     if (legacyNamespace === true) {
       statString += namespace.join(".")   + ' ' + valuePerSecond + ts_suffix;
-      statString += 'stats_counts.' + key + ' ' + value          + ts_suffix;
+      //statString += 'stats_counts.' + key + ' ' + value          + ts_suffix;
     } else {
-      statString += namespace.concat('rate').join(".")  + ' ' + valuePerSecond + ts_suffix;
-      statString += namespace.concat('count').join(".") + ' ' + value          + ts_suffix;
+      statString += namespace.concat('count').join(".")  + ' ' + valuePerSecond + ts_suffix;
+      //statString += namespace.concat('count').join(".") + ' ' + value          + ts_suffix;
     }
 
     numStats += 1;
