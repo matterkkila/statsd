@@ -1,3 +1,9 @@
+statsd (0.6.0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Matt Erkkila <matt.erkkila@rd.io>  Thu, 04 Apr 2013 14:44:00 -0700
+
 statsd (0.0.3) unstable; urgency=low
 
   * removed rdio references from init scripts and config
